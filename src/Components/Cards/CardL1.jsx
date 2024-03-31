@@ -9,11 +9,11 @@ function CardL1() {
             </div>
             <NavLink 
                 to = "/home"
-                className={({isActive}) => `${isActive ? "text-white-900":"text-gray-400"} py-3 flex items-center font-bold gap-1 `}
+                className={({isActive}) => `${isActive ? "text-white-900":"text-gray-400"} py-3 flex items-center font-bold gap-1`}
                 
                 >
                 <svg style = {{fill: 'currentColor'}} width = "30px" viewBox="0 0 512.00 512.00" xmlns="http://www.w3.org/2000/svg" stroke="#ffff"><g id="SVGRepo_bgCarrier" stroke-width="0"></g><g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g><g id="SVGRepo_iconCarrier"><polygon fill-rule="evenodd" points="192 0 0 153.6 0 384 149.333 384 149.333 256 234.667 256 234.667 384 384 384 384 153.6" transform="translate(64 64)"></polygon></g></svg>
-                Home
+                <span className='hover:bg-white-900'>Home</span>
             </NavLink>
             <NavLink 
                 to = "/search"
