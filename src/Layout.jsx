@@ -3,7 +3,8 @@ import { Outlet } from 'react-router-dom'
 import RightResizeable from './Components/ResizeableWindow/RightResizeable'
 import CardRightTop from './Components/Cards/CardRightTop'
 
-function Layout() {
+
+const Layout = () => {
     return (
         <>
             <div className='bg-black flex h-screen'>
@@ -18,4 +19,4 @@ function Layout() {
     )
 }
 
-export default Layout
+export default {Layout}

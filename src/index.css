@@ -5,6 +5,9 @@
 *{
   font-family: "M PLUS Rounded 1c", sans-serif;
 }
+html {
+  scroll-behavior: smooth;
+}
 body {
   -webkit-user-select: none;
   -moz-user-select: none;
