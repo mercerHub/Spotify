@@ -7,7 +7,7 @@ import CardRightTop from './Components/Cards/CardRightTop'
 const Layout = () => {
     return (
         <>
-            <div className='bg-black flex h-screen'>
+            <div className='bg-black flex h-100'>
                 <RightResizeable/>
                 <div className='w-3/4 card-bg m-3 rounded-xl'>
                     <CardRightTop/>

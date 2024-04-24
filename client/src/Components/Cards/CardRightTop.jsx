@@ -5,10 +5,11 @@ import { signOut } from 'firebase/auth';
 import { doSignOut } from '../Authentication/auth';
 
 function CardRightTop() {
-    const FirstName = (displayName) => {
-        const name = displayName.toString(); 
+    const FirstName = (displayName,email) => {
+        let name = email
+        if(displayName) name = displayName.toString(); 
         for(let x = 0 ; x < name.length; x ++){
-            if(name[x] === ' ') return name.slice(0,x);
+            if(name[x] === ' ' || name[x] === '@') return name.slice(0,x);
         }
         return name;
     }
@@ -41,11 +42,10 @@ function CardRightTop() {
                     <div className='fb-button hover:bg-stone-800 rounded-full px-4'>&gt;</div>
                 </div>
                 <div className='rounded-lg flex p-2 m-1'>
-                    <NavLink 
-                    to = "/login"
+                    <div 
                     className='text-stone-900 bg-stone-100 rounded-full px-5 py-2 m-2 border-2 border-black font-bold hover:bg-stone-400 hover:text-base transition-all duration-100 ease-in-out'
-                    >Welcome {FirstName(currentUser.displayName)}
-                    </NavLink> 
+                    >Welcome {FirstName(currentUser.displayName,currentUser.email).toUpperCase()}
+                    </div> 
                     <div
                     className='text-stone-900 bg-stone-100 rounded-full px-5 py-2 m-2 border-2 border-black font-bold hover:bg-stone-400 hover:text-base transition-all duration-100 ease-in-out'
                     onClick={doSignOut}

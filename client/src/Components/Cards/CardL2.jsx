@@ -25,7 +25,7 @@ function CardL2() {
                     <div className="bg-stone-800 rounded-xl py-4 px-6 w-100 mt-2 mr-2 flex flex-col ">
                         <span className='text-lg font-bold leading-loose'>Lets browse some podcasts</span>
                         <span className='text-base font-medium leading-loose'>We'll keep you updated !!</span>
-                        <button type="button" className="text-gray-900 bg-white border border-gray-300 focus:outline-none hover:bg-gray-100 focus:ring-4 focus:ring-gray-100 font-sm rounded-full text-sm font-bold px-2 py-2 mt-5 mb-5 dark:bg-gray-800 dark:text-white dark:border-gray-600 dark:hover:bg-gray-700 dark:hover:border-gray-600 dark:focus:ring-gray-700 w-1/2">Browse podcasts</button>
+                        <button type="button" className="text-gray-900 bg-white border border-gray-300 focus:outline-none hover:bg-gray-100 focus:ring-4 focus:ring-gray-100 font-sm rounded-full text-sm font-bold px-2 py-2 mt-5 mb-5 dark:bg-gray-800 dark:text-white dark:border-gray-600 dark:hover:bg-gray-700 dark:hover:border-gray-600 dark:focus:ring-gray-700 w-2/3">Browse podcasts</button>
                     </div>
                 </div>
             </div>
