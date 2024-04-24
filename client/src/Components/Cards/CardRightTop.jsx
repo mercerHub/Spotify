@@ -1,7 +1,7 @@
 import React from 'react'
 import { NavLink } from 'react-router-dom'
 import { useAuth } from '../../contexts/authContext'
-import { signOut } from 'firebase/auth';
+import { Navigate, useNavigate } from 'react-router-dom';
 import { doSignOut } from '../Authentication/auth';
 
 function CardRightTop() {
@@ -36,6 +36,7 @@ function CardRightTop() {
     )
     return (
         <>
+            {userLoggedIn && (<Navigate to={'/home'} replace={true} />)}
                 <div className='w-100 card-bg flex justify-between item-center'>
                 <div className='text-gray-100 rounded-lg flex p-2 m-1 items-center'>
                     <div className='fb-button hover:bg-stone-800 rounded-full px-4 '>&lt;</div>
