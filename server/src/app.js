@@ -20,5 +20,8 @@ app.use(cookieParser());
 
 // import routes
 
+import uploadRoute from "./routes/upload.routes.js"
+// implement routes
+app.use("/api/v1",uploadRoute);
 
 export default app;
